@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body-container {
+  padding: 20px;
+  /* width: 1440px; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 12px;
+  top: 35px;
+  left: 55px;
+  align-items: center;
+}
+li a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+.list ul {
+  display: flex;
+  gap: 50px;
+  padding-top: 20px;
+}
+.logo {
+  padding-left: 50px;
+}
+.download {
+  padding-right: 50px;
+}
+@media (max-width: 767px) {
+  li a {
+    display: none;
+  }
+  header {
+    align-items: center;
+  }
+  .download{
+    display: none;
+  }
+}
+
+/* section head text */
+
+.head-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px;
+}
+.head-text p {
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  display: block;
+  padding: 10px 20px;
+}
+.search {
+  width: 200px;
+  height: 45px;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: #7061611a;
+  box-shadow: 0px 1.0108270645141602px 2.0216541290283203px 0px #1018280d;
+
+  border: none;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #14001f;
+}
+
+@media (max-width: 767px) {
+  .head-text p {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+/* faq-main-section */
+.faq-main-section {
+  /* background: #14001f; */
+  padding: 10px 20px;
+  padding-top: 40px;
+}
+
+.faq-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 10px 20px;
+  /* align-items: center; */
+  justify-content: center;
+}
+.faq-wrap {
+  display: flex;
+  gap: 20px;
+  /* padding-bottom: 45px; */
+}
+
+.faq-item {
+  width: 200px;
+  height: 160px;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.faq-item h2 {
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #14001f;
+}
+.faq-item p {
+  color: #484848;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+    .faq-wrap {
+        flex-direction: column;
+  }
+  .faq-main-wrapper{
+    align-items: center;
+    justify-content: center;
+  }
+}
