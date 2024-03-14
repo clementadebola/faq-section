@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Korensi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -28,7 +29,10 @@
         <section class="head-text">
             <p>We’ve answered some of your questions so you don’t have to ask them again</p>
 
-            <input class="search" type="text" placeholder="search here">
+            <div class="search-container">
+                <input class="search" type="text" placeholder="Search here...">
+                <i class="fas fa-search"></i>
+              </div>
         </section>
 
         <div class="faq-main-section">
@@ -43,13 +47,16 @@
                     </div>
                     <div class="faq-item">
                         <h2>What should I do if my payment fails?</h2>
-                        <p>If your payment fails, you can use the (COD) payment option, if available on that order. If your
-                            payment is debited from your account after a payment failure, it will be credited back within
+                        <p>If your payment fails, you can use the (COD) payment option, if available on that order. If
+                            your
+                            payment is debited from your account after a payment failure, it will be credited back
+                            within
                             7-10 days.</p>
                     </div>
                     <div class="faq-item">
                         <h2>What is your cancellation policy?</h2>
-                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited
+                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be
+                            credited
                             into the same payment mode using which the payment was made</p>
                     </div>
                     <div class="faq-item">
@@ -58,35 +65,113 @@
                             general tab to change your email.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-wrap">
                     <div class="faq-item">
                         <h2>What should I do if my payment fails?</h2>
-                        <p>If your payment fails, you can use the (COD) payment option, if available on that order. If your
-                            payment is debited from your account after a payment failure, it will be credited back within
+                        <p>If your payment fails, you can use the (COD) payment option, if available on that order. If
+                            your
+                            payment is debited from your account after a payment failure, it will be credited back
+                            within
                             7-10 days.</p>
                     </div>
                     <div class="faq-item">
                         <h2>What is your cancellation policy?</h2>
-                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited
+                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be
+                            credited
                             into the same payment mode using which the payment was made</p>
                     </div>
                     <div class="faq-item">
                         <h2>What is your cancellation policy?</h2>
-                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited
+                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be
+                            credited
                             into the same payment mode using which the payment was made</p>
                     </div>
                     <div class="faq-item">
                         <h2>What is your cancellation policy?</h2>
-                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited
+                        <p>You can now cancel an order when it is in packed/shipped status. Any amount paid will be
+                            credited
                             into the same payment mode using which the payment was made</p>
                     </div>
-    
+
                 </div>
-               
+
             </div>
         </div>
+
+        <div class="get-in-touch-container">
+            <div class="get-intouch-wrapper">
+                <div class="get-intouch-wrap">
+                    <h2>Still have questions ?</h2>
+                    <p>Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+                </div>
+                <button id="showFormBtn" class="get-btn">
+                    <h2>Get in touch</h2>
+                </button>
+                <div id="formOverlay" class="overlay">
+                    <div class="form-container">
+                      <i class="fa fa-times" id="closeFormBtn"></i>
+                      <form id="myForm">
+                        <label for="fullName">Full Name:</label>
+                        <input class="full-name" type="text" id="fullName" name="fullName">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                        <button type="submit">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                  
+                  <div id="successMessage" style="display: none;">
+                    <p>Form submitted successfully!</p>
+                  </div>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <footer>
+            <div class="footer-wrap">
+
+                <h2 style="color: rgb(184, 29, 184);">Korensi</h2>
+                <div class="footer-items-wrap">
+                    <div class="products">
+                        <h2>Products</h2>
+                        <p>Online marketplace</p>
+                    </div>
+                    <div class="company">
+                        <h2>Company</h2>
+                        <ul>
+                            <li>About</li>
+                            <li>FAOs</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="legal">
+                        <h2>Legal</h2>
+                        <ul>
+                            <li>Terms</li>
+                            <li>Privacy</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                    <div class="socials">
+                        <h2>Socials</h2>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Linkedin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location">
+                <p>Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos, Nigeria.</p>
+                <p>contact@amana.com</p>
+                <p> +234 700 933 933 933</p>
+            </div>
+        </footer>
     </div>
 </body>
+<script src="./Js/index.js"></script>
 
 </html>
